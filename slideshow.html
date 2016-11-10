@@ -1,0 +1,26 @@
+
+
+<html>
+<head>
+<title>slideshow</title>
+<script>
+var image = document.getElementById("aaa");
+var img_array=["lilly.jpg","rose.jpg","lotus.jpg","sunflower.jpg"];
+var index=0;
+function slide()
+{
+
+    document["aaa"].src = img_array[index];
+    index++;
+    if(index>=img_array.length)
+    {
+    index=0;
+    }
+}
+setInterval("slide()",2000);
+</script>
+</head>
+<body>
+<img id="aaa" src="tulips.jpg" width="400" height="400" name="image" />
+</body>
+</html>
